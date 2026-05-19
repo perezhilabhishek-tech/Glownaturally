@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glow Naturally | Pure Skincare</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      scroll-behavior:smooth;
+    }
+
+    body{
+      font-family:'Poppins',sans-serif;
+      background:#f7f8f4;
+      color:#1f1f1f;
+      overflow-x:hidden;
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      backdrop-filter:blur(15px);
+      background:rgba(255,255,255,0.55);
+      z-index:1000;
+      border-bottom:1px solid rgba(255,255,255,0.2);
+    }
+
+    nav h1{
+      font-size:1.4rem;
+      color:#4b5d35;
+      font-weight:700;
+      letter-spacing:1px;
+    }
+
+    nav ul{
+      display:flex;
+      gap:30px;
+      list-style:none;
+    }
+
+    nav ul li a{
+      text-decoration:none;
+      color:#333;
+      font-weight:500;
+      transition:0.3s;
+    }
+
+    nav ul li a:hover{
+      color:#7d9b5d;
+    }
+
+    .hero{
+      height:100vh;
+      background:
+      linear-gradient(to right, rgba(255,255,255,0.82), rgba(255,255,255,0.35)),
+      url('p1.jpeg') center/cover no-repeat;
+      display:flex;
+      align-items:center;
+      padding:0 8%;
+    }
+
+    .hero-content{
+      max-width:600px;
+    }
+
+    .hero h2{
+      font-size:4rem;
+      line-height:1.1;
+      margin-bottom:20px;
+      color:#324122;
+    }
+
+    .hero p{
+      font-size:1.1rem;
+      line-height:1.8;
+      color:#444;
+      margin-bottom:30px;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:14px 32px;
+      border-radius:40px;
+      background:#4b5d35;
+      color:white;
+      text-decoration:none;
+      transition:0.3s;
+      font-weight:500;
+      box-shadow:0 10px 30px rgba(0,0,0,0.08);
+    }
+
+    .btn:hover{
+      transform:translateY(-3px);
+      background:#6d8850;
+    }
+
+    section{
+      padding:110px 8%;
+    }
+
+    .section-title{
+      text-align:center;
+      margin-bottom:60px;
+    }
+
+    .section-title h3{
+      font-size:2.5rem;
+      color:#324122;
+      margin-bottom:10px;
+    }
+
+    .section-title p{
+      color:#666;
+    }
+
+    .about{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:60px;
+      align-items:center;
+    }
+
+    .about img{
+      width:100%;
+      border-radius:30px;
+      box-shadow:0 20px 50px rgba(0,0,0,0.1);
+    }
+
+    .about-text p{
+      line-height:1.9;
+      color:#555;
+      margin-bottom:20px;
+    }
+
+    .services-grid,
+    .products-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:rgba(255,255,255,0.7);
+      border:1px solid rgba(255,255,255,0.4);
+      backdrop-filter:blur(20px);
+      padding:35px;
+      border-radius:28px;
+      transition:0.3s;
+      box-shadow:0 15px 40px rgba(0,0,0,0.05);
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card h4{
+      margin-bottom:15px;
+      color:#324122;
+      font-size:1.3rem;
+    }
+
+    .card p{
+      color:#666;
+      line-height:1.7;
+    }
+
+    .contact{
+      text-align:center;
+      background:#edf1e6;
+      border-radius:30px;
+    }
+
+    .contact p{
+      margin:15px 0;
+      color:#555;
+      font-size:1.05rem;
+    }
+
+    footer{
+      text-align:center;
+      padding:30px;
+      color:#666;
+      font-size:0.95rem;
+    }
+
+    @media(max-width:900px){
+
+      .hero h2{
+        font-size:2.8rem;
+      }
+
+      .about{
+        grid-template-columns:1fr;
+      }
+
+      nav ul{
+        gap:15px;
+      }
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <h1>Glow Naturally</h1>
+
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Pure Skincare.<br>Future Glow.</h2>
+
+      <p>
+        Discover futuristic botanical skincare crafted with nature’s purity
+        and modern skin science. Minimal ingredients. Maximum glow.
+      </p>
+
+      <a href="#products" class="btn">Explore Products</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-title">
+      <h3>About Us</h3>
+      <p>Inspired by nature. Designed for modern skin.</p>
+    </div>
+
+    <div class="about">
+      <img src="p2.jpeg" alt="Glow Naturally Logo">
+
+      <div class="about-text">
+        <p>
+          Glow Naturally creates clean, organic skincare solutions for people
+          who want healthy skin without harsh chemicals.
+        </p>
+
+        <p>
+          Our products blend botanical extracts, herbal science, and premium
+          ingredients into a luxurious Apple-inspired skincare experience.
+        </p>
+
+        <p>
+          Every formula is crafted to nourish, protect, and elevate your
+          natural glow.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="section-title">
+      <h3>Services</h3>
+      <p>Modern skincare experiences tailored for you.</p>
+    </div>
+
+    <div class="services-grid">
+
+      <div class="card">
+        <h4>Skin Consultation</h4>
+        <p>
+          Personalized skincare guidance based on your skin type and goals.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Organic Treatments</h4>
+        <p>
+          Herbal and toxin-free skincare solutions for everyday wellness.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Glow Therapy</h4>
+        <p>
+          Rejuvenation routines designed to restore natural radiance.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="products">
+    <div class="section-title">
+      <h3>Products</h3>
+      <p>Signature skincare essentials.</p>
+    </div>
+
+    <div class="products-grid">
+
+      <div class="card">
+        <h4>Organic Face Wash</h4>
+        <p>
+          Gentle botanical cleanser for refreshed and glowing skin.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Herbal Anti-Acne Cream</h4>
+        <p>
+          Naturally reduces acne while soothing and healing the skin barrier.
+        </p>
+      </div>
+
+      <div class="card">
+        <h4>Natural Sunscreen Lotion</h4>
+        <p>
+          Lightweight SPF protection enriched with herbal extracts.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-title">
+      <h3>Contact</h3>
+      <p>Let’s build your skincare glow journey.</p>
+    </div>
+
+    <div class="contact">
+      <p>Email: hello@glownaturally.art</p>
+      <p>Instagram: @glownaturally.art</p>
+      <p>Chennai, India</p>
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Glow Naturally — Pure Skincare
+  </footer>
+
+</body>
+</html>
